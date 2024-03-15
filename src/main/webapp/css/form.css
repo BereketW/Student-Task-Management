@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fffffff0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2px;
+}
+.logo {
+  color: black;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: white;
+}
+.forms {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.4);
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 4px;
+}
+input {
+  padding: 20px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(97, 95, 95, 0.848);
+}
+input:focus {
+  border: 1px solid rgba(97, 95, 95, 0.848);
+  outline: none;
+}
+input:focus ~ .login-error{
+	display: none;
+}
+
+
+.btn {
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  padding: 20px 20px;
+  border-radius: 20px;
+  letter-spacing: 5px;
+  border: none;
+  cursor: pointer;
+}
+.login,
+.register {
+  width: 400px;
+  padding: 2rem;
+}
+.mb-5 {
+  margin-bottom: 10px;
+}
+form {
+  margin-top: 1rem;
+}
+label {
+  margin: 6px;
+}
+
+.btn-primary {
+  background: rgb(58, 104, 254);
+  color: white;
+}
+.intro-form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(58, 104, 254);
+  gap: 15px;
+  padding: 2rem;
+}
+.intro-form {
+  color: white;
+}
+.btn-small {
+  padding: 15px 30px;
+  border: 1px solid white;
+}
+.btn:hover {
+  scale: 0.99;
+}
+.login-error{
+	color: red;
+	position: relative;
+	top: 10px;
+	left: 10px;
+}
+.red{
+	border:1px solid red;
+}
+.none{
+	display: none;
+}
+
+
+

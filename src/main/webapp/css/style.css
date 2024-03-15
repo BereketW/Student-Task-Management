@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+body {
+  line-height: 1.5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.header {
+  position: sticky;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  right: -70px;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(44, 44, 44);
+  letter-spacing: 2px;
+}
+a:active {
+  color: rgb(86, 124, 254);
+}
+.btn {
+  border: none;
+  padding: 10px 40px;
+  border-radius: 10px;
+  letter-spacing: 5px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.main {
+  text-align: center;
+  max-width: 50vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 4rem auto;
+}
+
+.btn-primary {
+  background: rgb(58, 104, 254);
+  color: white;
+  margin-right: 5px;
+}
+.btn-secondary {
+  background: transparent;
+  border: 2px solid rgb(58, 104, 254);
+  color: rgb(58, 104, 254);
+}
+.btn-primary:hover {
+  background: transparent;
+  border: 2px solid rgb(58, 104, 254);
+  color: rgb(58, 104, 254);
+}
+.btn-secondary:hover {
+  background: rgb(58, 104, 254);
+  color: white;
+}
+.btn-secondary:hover + .btn-primary {
+  background: transparent;
+  border: 2px solid rgb(58, 104, 254);
+  color: rgb(58, 104, 254);
+}
+
+.button:hover .btn:not(:hover) {
+  background: transparent;
+  border: 2px solid rgb(58, 104, 254);
+  color: rgb(58, 104, 254);
+}
+.main > * {
+  margin-bottom: 20px;
+}
+.main h1 {
+  font-size: 56px;
+}
+.main > p {
+  max-width: 50%;
+  color: rgb(176, 176, 176);
+}
+.images {
+  display: flex;
+  gap: 10px;
+  padding: 2rem;
+}
+.images > img {
+  max-width: 50%;
+}
+.left {
+  max-width: 10%;
+}
+
+.about-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  background: rgb(247, 247, 247);
+  padding: 3rem;
+}
+.about {
+  padding: 2rem;
+}
+.about-contents > .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left > p {
+  color: rgb(58, 104, 254);
+  font-weight: bold;
+  font-size: 20px;
+}
+.btn-feature {
+  word-wrap: break-word;
+}
+.about-contents > .right {
+  flex-basis: 0.7;
+  font-size: 1.2rem;
+  width: 70%;
+}
+.btn-learn {
+  padding: 12px 24px;
+  background: rgb(58, 104, 254);
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+img {
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 10px;
+  padding: 2rem;
+}
+.features-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 3rem;
+  padding: 2rem;
+}
+.description {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+.description > h3 {
+  font-size: 35px;
+}
+.image > img {
+  max-width: 100%;
+}
+.image {
+  flex: 1;
+}
+.btn-feature {
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+.features > *:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+footer {
+  padding: 2rem;
+}
+.footer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 4rem;
+  border-bottom: 2px solid white;
+}
+.footer-page {
+  border-radius: 30px;
+  background: rgb(36, 36, 36);
+  height: 100%;
+  padding: 4rem;
+}
+.footer-header > h1 {
+  color: white;
+  font-size: 3rem;
+  flex: 1;
+  max-width: 59%;
+}
+.btn-footer {
+  justify-self: end;
+
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.btn-dark {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 30px;
+}
+.btn-footer > .btn-primary {
+  padding: 20px 40px;
+  border-radius: 30px;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-block: 2rem;
+}
+.webpage {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.webpage > p {
+  max-width: 50%;
+  color: rgb(176, 176, 176);
+}
+.webpage > h2 {
+  color: rgb(247, 247, 247);
+}
+.webpage > a {
+  color: rgb(161, 160, 160);
+}
+.home-features > li > a,
+.home-links > li > a {
+  color: rgb(176, 176, 176);
+}
+.copyright {
+  color: rgba(247, 247, 247, 0.814);
+  text-align: center;
+}
+
+.feature-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
